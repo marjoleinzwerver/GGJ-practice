@@ -30,7 +30,7 @@ public class CatController : MonoBehaviour
     void FixedUpdate()
     {
         catVelocity.x = Input.GetAxis("Horizontal") * maxWalkSpeed;
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        if (Input.GetButton("Fire1") && isGrounded)
         {
             catVelocity.y = jumpSpeed;
         }
